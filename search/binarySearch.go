@@ -30,12 +30,12 @@ func binarySearch(slice []int, value int) int {
 	var low, high, mid int
 	high = len - 1
 	for low <= high {
-		mid = (low + high)/2
+		mid = (low + high) / 2
 		if slice[mid] == value {
-			return mid+1
+			return mid + 1
 		} else {
 			if slice[mid] > value {
-				high = mid -1
+				high = mid - 1
 			} else {
 				low = mid + 1
 			}
